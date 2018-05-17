@@ -1,339 +1,46 @@
-<!DOCTYPE html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>模式识别与智能系统开发实验室</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/ico" href="/cover/favicon.ico" />
-    <!-- Lang Detection -->
-    <script>
-      function getQueryVariable(variable) {
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-       return(false);
-      }
-      var lang = getQueryVariable('lang');
-      if (!lang)
-        lang = (navigator.language || navigator.browserLanguage).toLowerCase();
-      if (lang != 'zh-cn')
-        window.location.replace("/index_en.html?lang=en");
-    </script>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>模式识别与智能系统开发实验室 PriSDL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="/cover/index_assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/cover/index_assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/cover/index_assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="/cover/index_assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/cover/css/compose.min.css">
-    <link rel="stylesheet" href="/cover/css/style.css">
-    
-    <!-- Js -->
-    <script src="/cover/js/compose.min.js"></script>
-    <script src="/cover/js/main.js"></script>
-  </head>
+		<!-- Header -->
+			<header id="header">
+				<!-- <h1 style="letter-spacing: 5px">PriSDL</h1> -->
+				<img src="/cover/index_assets/images/logo.png" alt="Logo" style="height: 4em;" />
+				<p style="margin: 0;"><span class="sm-hide">中国科学院大学 • </span>模式识别与智能系统开发实验室</p>
+				<p>我们专注于前沿研究，探索如何让计算机更好地观察、理解世界。 <a target="_blank" href="/intro.html"> <span class="icon fa-angle-double-right"></span> 了解更多</a></p>
+			</header>
 
-  <body>
-  <!-- Header Start -->
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <!-- header Nav Start -->
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/index.html">
-                  <img src="/cover/images/logo.png" alt="Logo">
-                </a>
-              </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a target="_blank" href="/index.html">主 页</a></li>
-                    <li><a target="_blank" href="/categories/%E6%96%B0%E9%97%BB/">动 态</a></li>
-                    <li><a target="_blank" href="/content/work/paper.html">论 文</a></li>
-                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">成 果 <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a target="_blank" href="/content/work/technology.html">核心技术</a></li>
-                        <li><a target="_blank" href="/content/work/project.html">项目开发</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" href="javascript:void(0)">团 队 <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a target="_blank" href="/content/team/people.html">成员介绍</a></li>
-                        <li><a target="_blank" href="/content/team/alumni.html">人才培养</a></li>
-                        <li><a target="_blank" href="/content/team/life.html">学生生活</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="/index_en.html?lang=en">English</a></li>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header><!-- header close -->
-        
-    <!-- Banner Start -->
-    <section id="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-2">
-            <div class="block">
-              <h1 class="animated fadeInUp">模式识别与智能系统开发实验室</h1>
-              <p class="animated fadeInUp">我们充满激情，专注于前沿研究，积极探索如何让计算机更好地观察、理解世界</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<!-- Navbar -->
+			<div id="navbar" method="post" action="#">
+				<input type="button" value="新 闻" onClick="window.open('/categories/%E6%96%B0%E9%97%BB/')"; />
+				<input type="button" value="论 文" onClick="window.open('/content/work/paper.html')";/>
+				<input type="button" value="研 究" onClick="window.open('/content/work/technology.html')";/>
+				<input type="button" value="人 员" onClick="window.open('/content/team/people.html')";/>
+			</div>
 
-    <!-- Intro Start -->
-    <section id="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <div class="block">
-              <div class="section-title">
-                <h2>关于我们</h2>
-                <!-- <p></p> -->
-              </div>
-              <p>
-                模式识别与智能系统开发实验室（Pattern Recognition and Intelligent System Development Laboratory，PriSDL）成立于2006年，隶属于中国科学院大学电子电气与通信工程学院，主要从事机器学习、图像和视频理解、模式识别等方向的研究工作。主要研究内容包括关键目标检测、跟踪、识别与行为分析，多源数据融合与感知等。研究工作受到科技部国家重点研发计划、国家自然科学基金重点、面上及青年项目、北京市科委项目、中国科学院多项基金等资助。实验室与国内外高校及著名研究机构进行广泛学术交流，邀请了来自美国宾夕法尼亚大学、美国马里兰大学、芬兰OULU大学、清华大学、中科院计算所、中科院应用数学所等研究机构的学者到实验室进行学术交流。实验室目前与美国宾夕法尼亚大学、马里兰大学、布朗大学，芬兰OULU大学等开展研究生联合培养工作。实验室非常重视算法的产业化推广。所提出的部分算法已在几种自主研发系统上实现并在南京军区某部、中国石化及航天科工集团等单位应用。实验室致力于一流人才的培养，毕业生多就职于高校及国内外著名企事业单位。
-              </p>
-            </div>
-          </div><!-- .col-md-7 close -->
-          <div class="col-md-5 col-sm-12">
-            <div class="block">
-              <img src="/cover/images/tapping.gif" alt="Tapping animation">
-            </div>
-          </div><!-- .col-md-5 close -->
-        </div>
-      </div>
-    </section>
-  
-    <!-- Work Start -->
-    <section id="works">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-6">
-            <h2>创新与探索</h2>
-            <p>我们划分多个子课题组，在目标检测、场景理解、弱监督学习、行人重识别等视觉任务上展开研究。我们也积极把学术成果转化落地到实际项目上。</p>
-            <a target="_blank" href="/categories/%E6%88%90%E6%9E%9C/" class="btn btn-view-works">查看近期工作</a>
-          </div>
-        </div>
-      </div>
-    </section>
-        
-    <!-- Welfare Start -->
-    <section id="welfare">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h2>资源与配置</h2>
-            <p>不管是工作还是生活，PriSDL支撑你实现自己的理想。</p>
-          </div>
-        </div>
-        <div class="row ">
-          <div class="col-sm-6 col-md-3">
-            <div class="welfare-item">
-              <i class="ion-flash"></i>
-              <h4>服务器集群</h4>
-              <p>实验室配备多台高性能CPU和GPU计算服务器，为高效率的实验与大规模数据处理提供支撑。</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="welfare-item">
-              <i class="ion-paper-airplane"></i>
-              <h4>专业无人机</h4>
-              <p>挂载单反相机的影视级八轴无人机让我们可以自主采集高清航拍数据集，亦能探索多种空中智能视觉任务。</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="welfare-item">
-              <i class="ion-settings"></i>
-              <h4>电子工作台</h4>
-              <p>示波器、稳压电源、信号发生器、焊台风枪、机械臂等一应俱全，让我们软硬结合可进行系统级开发。</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="welfare-item">
-              <i class="ion-ios-monitor"></i>
-              <h4>舒适工作环境</h4>
-              <p>实验室提供宽敞的工位、高配置台式机，多显示器工作环境、厨房和讨论室，这些都让我们工作起来轻松愉悦。</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="welfare-item">
-              <i class="ion-upload"></i>
-              <h4>标准学术平台</h4>
-              <p>自主研发的SDL标准化学术平台(SSAP)给每个成员提供私有云存储、在线文档协作、实验环境虚拟化管理等功能，提升效率。</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="welfare-item">
-              <i class="ion-university"></i>
-              <h4>专家讲座</h4>
-              <p>实验室定期邀请领域内知名专家学者进行学术报告与讨论交流，帮助大家把握前沿动态。</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="welfare-item">
-              <i class="ion-chatboxes"></i>
-              <h4>国际会议</h4>
-              <p>实验室支持学生积极参加高质量的国际学术会议，扩宽眼界，提升水平。</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="welfare-item">
-              <i class="ion-earth"></i>
-              <h4>海外联合培养</h4>
-              <p>实验室与美国宾夕法尼亚大学、马里兰大学、芬兰OULU大学等海外名校建立合作关系，定期输送学生前往联合培养。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Events Start -->
-    <section id="events">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="block">
-              <h2>精彩纷呈的学研生活</h2>
-              <p>我们在这里学习生活研究，取得更高的成就，提升自我价值。</p>
-              <a class="btn btn-default btn-events" target="_blank" href="/categories/%E6%96%B0%E9%97%BB/" >查看我们的动态</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Content Start -->
-    <section id="team">
-      <div class="container">
-        <div class="row">
-          <div class="section-title text-center">
-            <h2>团队组成</h2>
-            <p>PriSDL如同一个大家庭，大家一起奋斗亦相互支撑</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="block">
-              <ul class="counter-box clearfix">
-                <li>
-                  <div class="block">
-                    <i class="ion-ios-chatboxes-outline"></i>
-                    <h4 class="counter">4</h4>
-                    <span>教授导师</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="block">
-                    <i class="ion-ios-glasses-outline"></i>
-                    <h4 class="counter">2</h4>
-                    <span>海外留学生/访问学者</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="block">
-                    <i class="ion-ios-compose-outline"></i>
-                    <h4 class="counter">12</h4>
-                    <span>博士研究生</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="block">
-                    <i class="ion-ios-timer-outline"></i>
-                    <h4 class="counter">10</h4>
-                    <span>硕士研究生</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="text-center">
-              <a target="_blank" href="/categories/%E5%9B%A2%E9%98%9F/" class="btn btn-view-team">查看团队</a>
-            </div>
-          </div>
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a target="_blank" href="http://j.map.baidu.com/wQNCN" class="icon fa-map-marker"><span class="label">地址</span></a></li>
+					<li><a target="_blank" href="mailto:PriSDL@outlook.com" class="icon fa-envelope-o"><span class="label">联系我们</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; PriSDL 2018.</li>
+				</ul>
+			</footer>
 
-          <div class="col-md-6">
-            <div class="team-carousel">
-              <div id="team-slider" class="owl-carousel">
-                <div>
-                    <img src="/cover/images/cotation.png" alt="cotation">
-                    <p class="team-cotation">"国科大位于长城脚下、雁栖湖畔，怀柔科学城的科学教育区。实验室致力于一流人才培养，为每位同学量身打造培养计划，绝大多数毕业生都取得了不错的成就。热烈欢迎有志于从事图像和视频理解、模式识别等方向的学子报考实验室。"</p>
-                    <div class="user">
-                      <img width=84 height=84 src="/cover/images/avatar-jjb.png" alt="Pepole">
-                      <p><span>焦建彬</span> 百人计划 教授</p>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer Start -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-menu">
-              <ul>
-                <li><a target="_blank" href="http://www.ucas.ac.cn/">中国科学院大学</a></li>
-                <li><a target="_blank" href="http://eece.ucas.ac.cn/">电子电气与通信工程学院</a></li>
-                <li><a id="contact-us" target="_blank" href="mailto:PriSDL@outlook.com">联系我们</a></li>
-              </ul>
-            </div>
-            <p>&copy;2018 国科大·模式识别与智能系统开发实验室</p>
-          </div>
-        </div>
-      </div>
-    </footer>       
-
-    <!-- Model start -->
-    <div class="modal fade" id="modal-note" tabindex="-1" role="dialog" aria-labelledby="modal-note-label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-              &times;
-            </button>
-            <h4 class="modal-title" id="modal-note-label">
-              给我们留言
-            </h4>
-          </div>
-          <div class="modal-body">
-            <form role="form">
-              <div class="form-group">
-                <label for="name">您的名字:</label>
-                <input type="text" class="form-control" placeholder="Francis" id="note-name">
-                <label for="email">您的邮箱:</label>
-                <input type="text" class="form-control" placeholder="frank@gmail.com" id="note-email">
-                <label for="message">消息内容:</label>
-                <textarea class="form-control" rows="4" placeholder="Hi there!" id="note-message"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">取 消</button>
-              <button type="button" class="btn btn-info" id="note-send">发 送</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal -->
-    </div>
-  </body>
+	
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="/cover/index_assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/cover/index_assets/js/main.js"></script>
+	</body>
 </html>
