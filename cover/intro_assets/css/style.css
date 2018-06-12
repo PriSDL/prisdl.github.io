@@ -190,7 +190,17 @@ header .navbar-default .navbar-nav>.open>a {
   font-size: 14px;
   line-height: 1.8;
 }
-
+#welfare .btn-view-team {
+  color: #474455;
+  border: 1px solid #474455;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+#welfare .btn-view-team:hover {
+  color: #fff;
+  background-color: #474455
+}
 /*--
 	Events Start 
 --*/
